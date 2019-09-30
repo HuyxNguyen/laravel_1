@@ -1,0 +1,142 @@
+body{
+    background-color: white;
+}
+h2 h1 h3 h4 h5{
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+hr{
+    width: 30%;
+    border: 3;
+    height: 1px;
+    background: #d8d8d8;
+}
+
+.header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-first{
+    border-bottom: #1f6fb2;
+    color: #000;
+    text-transform: uppercase;
+}
+.menu-first a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+.menu-first a:hover{
+    color: blue;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.carousel-inner > .carousel-item > img{
+    min-height: 450px;
+}
+.card{
+    border-radius: unset;
+    border: unset;
+}
+.card-overlay-set{
+    padding: 3rem;
+}
+.detail_link a{
+    color: white;
+    text-decoration: underline;
+}
+.detail_link a:hover{
+    color: #4aa0e6;
+}
+.sp_set_img{
+    min-width: 540px;
+    max-height: 330px;!important;
+}
+.content-text > p{
+    text-align: center;
+    padding: 0px 150px;
+    margin: 0 auto 0 auto;
+}
+.sp_thoi_trang{
+    width: 75%;
+    margin: 0 auto ;
+}
+.chi_tiet_sp > h3{
+    font-weight: bold;
+}
+.chi_tiet_sp > a{
+    color: black;
+}
+.chi_tiet_sp > a:hover{
+    color: #4aa0e6;
+    text-decoration: none;
+}
+.chi_tiet_sp > img{
+    max-height: 15px !important ;
+    max-width: 100%;
+}
+.sp_thiet_ke{
+    margin: 0 auto 0 auto;
+}
+.info-home {
+    color: white;
+    width: 100%;
+    height: 300px;
+    padding: 100px 0px;
+    background: #ffffff url("http://localhost/Laravel_test/test/public/img/anh15.png") no-repeat;
+}
+.page-footer{
+    background-color: #0b1d1e;
+}
+.text-footer{
+    padding-top: 5px;
+    display: grid ;
+}
+.text-footer > a{
+    color: white;
+    text-decoration: underline;
+}
+.text-footer > a:hover{
+    color: #1f6fb2;
+}
+
+.detail_item{
+    padding-top: 10px;
+    border-bottom: solid 1px #c6c8ca;
+    display: flex;
+}
+.detail_name{
+    width: 150px;
+}
+.mini_bar{
+    padding: 20px;
+    border: 1px solid #c6c8ca;
+}
+
+.detail_title{
+    border: solid 1px #000000;
+    padding: 10px;
+    margin-bottom: -1px;
+    text-transform: uppercase;
+    background: #ffffff;
+    border-bottom: none!important;
+    /*
+    width: 200px;
+    */
+    float: left;
+}
+.clear{
+    clear: both;
+    border-top: 1px solid #000000;
+}
+.detail_info{
+    margin: 10px;
+}
+
+
+
