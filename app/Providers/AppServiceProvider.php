@@ -24,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        view()->share('url','http://localhost/Laravel_test/laravel_1/public');
+        view()->share('url','http://localhost/Laravel_test/test/public');
     }
 }

@@ -31,12 +31,17 @@
                                 <div class="carousel-item active">
                                     <img class="" src="{{$url}}/img/anh1.png" alt="First slide">
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="" src="{{$url}}/img/anh2.png" alt="Second slide" >
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="" src="{{$url}}/img/anh3.png" alt="Third slide">
-                                </div>
+                                @foreach($img as $img_sp)
+                                    <div class="carousel-item">
+                                        <img class="" src="{{$url}}/img/img_sp/{{$img_sp->url}}" alt="Second slide" >
+                                    </div>
+                                @endforeach
+                                {{--<div class="carousel-item">--}}
+                                    {{--<img class="" src="{{$url}}/img/anh2.png" alt="Second slide" >--}}
+                                {{--</div>--}}
+                                {{--<div class="carousel-item">--}}
+                                    {{--<img class="" src="{{$url}}/img/anh3.png" alt="Third slide">--}}
+                                {{--</div>--}}
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -56,15 +61,15 @@
                         <div class="detail_product">
                             <div class="detail_item">
                                 <div class="detail_name ">kich thuoc:</div>
-                                <div> 15.14</div>
+                                <div>{!! $sp['kichthuoc_sp'] !!}</div>
                             </div>
                             <div class="detail_item">
-                                <div class="detail_name ">chat lieu:</div>
-                                <div> ?</div>
+                                <div class="detail_name ">loai san pham:</div>
+                                <div>{!! $sp['loai_sp'] !!}</div>
                             </div>
                             <div class="detail_item">
-                                <div class="detail_name"> mau sac </div>
-                                <div>?</div>
+                                <div class="detail_name"> mau sac: </div>
+                                <div>{!! $sp['mausac_sp'] !!}</div>
                             </div>
                         </div>
                     </div>
@@ -79,6 +84,24 @@
                     <p>san pham dep</p>
                     <img src="https://tanmydesign.com/uploaded/san-pham/Chan%20ga%20goi/Anh%20ga%20goi%20HOANG-6.jpg" alt="anh1">
                     <img src="https://tanmydesign.com/uploaded/san-pham/hdsd%20chuan-01.jpg" alt="anh2">
+                </div>
+                <br>
+                {{--san pham khac--}}
+                <div class="detail_title">
+                    san pham khac
+                </div>
+                <div class="clear"></div>
+                <br>
+                <div class="row">
+                    @foreach($sp_tuongtu as $sptt)
+                        <div class="col-4 ">
+                            <a href="" class="more_product">
+                                <img src="{{$url}}/img/img_sp/{{$sptt->img_sp}}" alt="anh san pham" style="width: 250px;height: 200px">
+                                <h5>Bộ khăn ăn(6chiếc)40x40 thêu hoa đào</h5>
+                            </a>
+                        </div>
+                    @endforeach
+                    {{$sp_tuongtu->links()}}
                 </div>
             </div>
 
@@ -104,9 +127,6 @@
                 </div>
             </div>
         </div>
-        <br>
-
     </div>
-    <br>
     <br>
 @endsection

@@ -137,6 +137,13 @@ hr{
 .detail_info{
     margin: 10px;
 }
+.more_product{
 
+}
+.more_product > h5{
+    padding-top: 10px;
+    font-weight: bold;
+    color: black;
+}
 
 

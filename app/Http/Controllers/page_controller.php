@@ -43,13 +43,18 @@ class page_controller extends Controller
                 'loai_sp' => $pr->loai_sp,
                 'note_sp' => $pr->note_sp,
                 'id_sp' => $pr->id_sp,
-                'img_sp' => $pr->img_sp
+                'img_sp' => $pr->img_sp,
+                'kichthuoc_sp' => $pr->kichthuoc_sp,
+                'mausac_sp' => $pr->mausac_sp
             ];
         }
+        $sp_tuongtu = $sp->get_sp($san_pham['loai_sp']);
+
         return view('chitiet_sp',
             [
                 'sp' => $san_pham,
-                'img' => $img
+                'img' => $img,
+                'sp_tuongtu' =>$sp_tuongtu
             ]);
     }
 //    public function sp_theu_tay(){
